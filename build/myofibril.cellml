@@ -229,8 +229,8 @@
         <variable initial_value="3.49E4" name="KIb" units="micromolar"/>
         <variable initial_value="4.73E3" name="Kid" units="micromolar"/>
         <variable initial_value="1.67E3" name="Kd" units="micromolar"/>
-        <variable initial_value="1.967E4" name="V1" units="micromolar_per_second"/>
-        <variable initial_value="8.290E4" name="V11" units="micromolar_per_second"/>
+        <variable initial_value="13.00E3" name="V1" units="micromolar_per_second"/>
+        <variable initial_value="54.8E3" name="V11" units="micromolar_per_second"/>
         <variable name="DenCK" units="dimensionless"/>
         <variable name="mATP" public_interface="in" units="micromolar"/>
         <variable name="Cr" public_interface="in" units="micromolar"/>
@@ -434,7 +434,7 @@
         <variable name="Pi" public_interface="in" units="micromolar"/>
         <variable initial_value="0.065800" name="R" units="micromolar"/>
         <variable name="J_ATPase" units="micromolar_per_second"/>
-        <variable initial_value="0.05" name="X_ATPase" units="micromolar_per_second"/>
+        <variable initial_value="0.01" name="X_ATPase" units="micromolar_per_second"/>
         <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
                 <eq/>
