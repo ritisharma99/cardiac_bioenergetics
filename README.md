@@ -11,10 +11,15 @@ openCMISS and associated libraries - www.opencmiss.org
 
 **BRANCH INFORMAITON**
 ----------------------
-master:
- - contains the base codes for simulating mitochondrial OXPHOS and subsequent metabolite exchange between mitochondria and myofibrils. 
+V 2.0:
+ - contains the version 2.0 codes for simulating mitochondrial OXPHOS and subsequent metabolite exchange between mitochondria and myofibrils. 
 The simulation uses reaction diffusion equations to model the diffusion of metabolites over a realistic FE mesh dervied from electron 
 microsocpy images. 
+
+**What's NEW ?**
+----------------------
+1. Simplified Mesh with only two mesh regions (mitochondria and myofibrls)
+2. Updated description of mt-CK enzyme reaction in mitochondria
 
 **FOLDER INFORMATION**
 ----------------------
@@ -22,7 +27,7 @@ microsocpy images.
  - directory containing the fortran 90 program routine that uses opencmiss libraries to simulate mitochondrial OXHPOS and diffusion of metabolites in a cross section of a cell.
 
  MESH/:
-        - filenames containing .1.node/ele/face : trinagle generated mesh files of a 2D cross section from SBM derived rat ventricular myocyte
+ - filenames containing .1.node/ele/face : trinagle generated mesh files of a 2D cross section from SBM derived rat ventricular myocyte
         
  **FLIE INFORMATION**
 ----------------------
