@@ -21,16 +21,16 @@ microsocpy images.
  src/:
  - directory containing the fortran 90 program routine that uses opencmiss libraries to simulate mitochondrial OXHPOS and diffusion of metabolites in a cross section of a cell.
 
-    MESH/:
+ MESH/:
         - filenames containing .1.node/ele/face : trinagle generated mesh files of a 2D cross section from SBM derived rat ventricular myocyte
         
  **FLIE INFORMATION**
 ----------------------
  The parent directory containins all the necessary inputs (other than mesh files) that are required for the simulations
-    - inputs.txt containts the diffusvity values and intial micromolar concentrations of the metabolites simulated in the model.
-    - Mitochondria_control.cellml (for control mitochondria) and Mitochondria_diabetes.cellml (diabetic mitochondria) 
+ 1. inputs.txt containts the diffusvity values and intial micromolar concentrations of the metabolites simulated in the model.
+ 2. Mitochondria_control.cellml (for control mitochondria) and Mitochondria_diabetes.cellml (diabetic mitochondria) 
     contains the ODEs describing mitochondrial OXPHOS reactions (solved alongwith the PDEs using strang splitting). 
-    - Myofibril.cellml contains the ODEs describing myofibrilar reactions (solved alongwith the PDEs using strang splitting). 
+ 3. Myofibril.cellml contains the ODEs describing myofibrilar reactions (solved alongwith the PDEs using strang splitting). 
 
 
 RUNNING THE PROGRAM
