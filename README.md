@@ -1,4 +1,4 @@
-cardiac_bioenergetics
+cardiac_bioenergetics V 2.0
 ===========
 
 A set of codes to simulate mitochondrial OXPHOS and energy metabolism in cardiac cells using FE methods. 
@@ -20,16 +20,17 @@ microsocpy images.
 ----------------------
  src/:
  - directory containing the fortran 90 program routine that uses opencmiss libraries to simulate mitochondrial OXHPOS and diffusion of metabolites in a cross section of a cell.
- 
-build/:
-  - directory containing all the necessary inputs that are required for the simulations
-    - inputs.txt containts the diffusvity values and intial micromolar concentrations of the metabolites simulated in the model.
-    - Mitochondria.cellml contains the ODEs describing mitochondrial OXPHOS reactions (solved alongwith the PDEs using strang splitting). 
-    - Myofibril.cellml contains the ODEs describing myofibrilar reactions (solved alongwith the PDEs using strang splitting). 
 
     MESH/:
         - filenames containing .1.node/ele/face : trinagle generated mesh files of a 2D cross section from SBM derived rat ventricular myocyte
- 
+        
+ **FLIE INFORMATION**
+----------------------
+ The parent directory containins all the necessary inputs (other than mesh files) that are required for the simulations
+    - inputs.txt containts the diffusvity values and intial micromolar concentrations of the metabolites simulated in the model.
+    - Mitochondria_control.cellml (for control mitochondria) and Mitochondria_diabetes.cellml (diabetic mitochondria) 
+    contains the ODEs describing mitochondrial OXPHOS reactions (solved alongwith the PDEs using strang splitting). 
+    - Myofibril.cellml contains the ODEs describing myofibrilar reactions (solved alongwith the PDEs using strang splitting). 
 
 
 RUNNING THE PROGRAM
@@ -38,4 +39,4 @@ RUNNING THE PROGRAM
 2. Once installed, generate a Makefile in the cardiac_bioenergetics directory using using CMake: "cmake -DOpenCMISSLibs_DIR=YOUR_OPENCMISS_INSTALL_DIR_HERE ."
 3. Build the Fortran source file with the generated Makefile: "make"
 4. File 'inputs.txt' contains default settings to run a simulation. Comments (prefixed by #) explain the different input variables.
-5. Run the executable: "./src/cardiac_bioenergetics"
+5. Run the executable: "./src/fortran/cardiac_bioenergetics"
