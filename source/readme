@@ -1,0 +1,5 @@
+1C3_5.py contains the base code for simulating mitochondrial OXPHOS and subsequent metabolite exchange between mitochondria and myofibrils. 
+
+The simulation uses reaction diffusion equations to model the diffusion of metabolites over a realistic FE mesh dervied from electron microsocpy images.
+
+The required application/packages to run this are: openCMISS and associated libraries - www.opencmiss.org
